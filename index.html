@@ -16,208 +16,88 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
     <header>
       <h1>Pricing & Plans</h1>
       <p>Discover the plan that unlocks the transformative power of digital art and join our vibrant community today.</p>
     </header>
 
     <main>
-      <section id="table-wrapper">
-        <table>
-          <thead>
-            <tr style="height: 4rem;">
-              <th class="empty-head-cell">
-              </th>
-              <th data-plan="team" class="team-plan">
-                <span class="title">
-                  Team
-                </span>
-                <p class="price">
-                  $59
-                </p>
-                <span class="period">
-                  Per month
-                </span>
-              </th>
-              <th data-plan="popular" class="popular-plan">
-                <span class="title">
-                  Popular
-                </span>
-                <p class="price">
-                  $99
-                </p>
-                <span class="period">
-                  Per month
-                </span>
-              </th>
-              <th data-plan="enterprise">
-                <span class="title">
-                  Enterprise
-                </span>
-                <p class="price">
-                  $299
-                </p>
-                <span class="period">
-                  Per month
-                </span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="feature-cell">Website number</td>
-              <td class="team-plan">10</td>
-              <td class="popular-plan">50</td>
-              <td>Unlimited</td>
-            </tr>
+      <!-- Replace the table with a flex container -->
+      <section id="pricing-container">
+        <!-- Feature column -->
+        <div class="pricing-column feature-column">
+          <div class="plan-header empty-head-cell"></div>
+            <div class="feature-item"><span>Website number</span></div>
+            <div class="feature-item"><span>Server Storage</span></div>
+            <div class="feature-item"><span>Database</span></div>
+            <div class="feature-item"><span>Unmetered Bandwidth</span></div>
+            <div class="feature-item"><span>SSD Disk</span></div>
+            <div class="feature-item"><span>VCPUs Fontworld</span></div>
+            <div class="feature-item"><span>Worldpress install</span></div>
+            <div class="feature-item"><span>Server speed</span></div>
+          <div class="plan-footer"></div>
+        </div>
 
-            <tr>
-              <td
-                class="feature-cell"
-              >Server Storage</td>
-              <td class="team-plan">500 GB</td>
-              <td class="popular-plan">1 TB</td>
-              <td>Unlimited</td>
-            </tr>
-            <tr>
-              <td
-                class="feature-cell"
-              >Database</td>
-              <td class="team-plan">
-                15
-              </td>
-              <td class="popular-plan">Unlimited</td>
-              <td>Unlimited</td>
-            </tr>
-            <tr>
-              <td
-                class="feature-cell"
-              >Unmetered Bandwidth</td>
-              <td class="team-plan">
-                <img src="resources/images/check-1.svg" alt="check" />
-              <td class="popular-plan">
-                <img src="resources/images/check.svg" alt="check" />
-              </td>
-              <td>
-                <img src="resources/images/check-1.svg" alt="check" />
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="feature-cell"
-              >
-                SSD Disk
-              </td>
-              <td class="team-plan">
-                -
-              </td>
-              <td class="popular-plan">
-                <img src="resources/images/check.svg" alt="check" />
-              </td>
-              <td>
-                <img src="resources/images/check-1.svg" alt="check" />
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="feature-cell"
-              >VCPUs Fontworld</td>
-              <td class="team-plan">
-                -
-              </td>
-              <td class="popular-plan">
-                <img src="resources/images/check.svg" alt="check" />
-              </td>
-              <td>
-                <img src="resources/images/check-1.svg" alt="check" />
-              </td>
-            </tr>
-            <tr>
-              <td class="feature-cell">Worldpress install</td>
-              <td class="team-plan">
-                -
-              </td>
-              <td class="popular-plan">
-                <img src="resources/images/check.svg" alt="check" />
-              </td>
-              <td>
-                <img src="resources/images/check-1.svg" alt="check" />
-              </td>
-            </tr>
-            <tr>
-              <td class="feature-cell">Server speed</td>
-              <td class="team-plan">
-                -
-              </td>
-              <td class="popular-plan">
-                <img src="resources/images/check.svg" alt="check" />
-              </td>
-              <td>
-                <img src="resources/images/check-1.svg" alt="check" />
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td class="team-plan"><button>Get Started</button></td>
-              <td class="popular-plan"><button>Get Started</button></td>
-              <td><button>Get Started</button></td>
-            </tr>
-          </tfoot>
-        </table>
+        <!-- Team column -->
+        <div class="pricing-column team-plan">
+          <div class="plan-header">
+            <span class="title">Team</span>
+            <p class="price">$59</p>
+            <span class="period">Per month</span>
+          </div>
+          <div class="plan-feature">10</div>
+          <div class="plan-feature">500 GB</div>
+          <div class="plan-feature">15</div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-feature">-</div>
+          <div class="plan-feature">-</div>
+          <div class="plan-feature">-</div>
+          <div class="plan-feature">-</div>
+          <div class="plan-footer">
+            <button>Get Started</button>
+          </div>
+        </div>
+
+        <!-- Popular column -->
+        <div class="pricing-column popular-plan">
+          <div class="plan-header">
+            <span class="title">Popular</span>
+            <p class="price">$99</p>
+            <span class="period">Per month</span>
+          </div>
+          <div class="plan-feature">50</div>
+          <div class="plan-feature">1 TB</div>
+          <div class="plan-feature">Unlimited</div>
+          <div class="plan-feature"><img src="resources/images/check.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check.svg" alt="check" /></div>
+          <div class="plan-footer">
+            <button>Get Started</button>
+          </div>
+        </div>
+
+        <!-- Enterprise column -->
+        <div class="pricing-column enterprise-plan">
+          <div class="plan-header">
+            <span class="title">Enterprise</span>
+            <p class="price">$299</p>
+            <span class="period">Per month</span>
+          </div>
+          <div class="plan-feature">Unlimited</div>
+          <div class="plan-feature">Unlimited</div>
+          <div class="plan-feature">Unlimited</div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-feature"><img src="resources/images/check-1.svg" alt="check" /></div>
+          <div class="plan-footer">
+            <button>Get Started</button>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- 
-      Pricing & Plans
-      
-      Discover the plan that unlocks the transformative power of digital art and join our vibrant community today.
-      
-      Website number
-      
-      Server storage
-      
-      Database
-      
-      Unmetered Bandwidth
-      
-      SSD Disk
-      
-      VCPUS Fontworld
-      
-      Worldpress install
-      
-      Server speed
-      
-      Free
-      
-      $0
-      
-      Per month
-      
-      100 GB
-      
-      Get Started
-      
-      Team
-      
-      $59
-      
-      500 GB
-      
-      Popular
-      
-      $99
-      
-      1 TB
-      
-      Unlimited
-      
-      Enterprise
-      
-      $299
-  -->
-
   </body>
 </html>
