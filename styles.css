@@ -68,6 +68,11 @@ body {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 /* 5. Improve media defaults */
 img,
 picture,
@@ -177,7 +182,8 @@ main {
     width: 100px;
     flex-shrink: 0;
 
-    background-color: var(--grey);
+    background-color: var(--light-grey);
+    border-bottom: 1px solid var(--medium-grey);
   }
 
   .feature-item span {
@@ -200,7 +206,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid var(--medium-grey);
     min-height: 115px;
   }
   
@@ -243,6 +248,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 3rem;
+    border-bottom: 1px solid var(--medium-grey);
   }
   
   .popular-plan .plan-feature {
@@ -262,7 +268,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid var(--medium-grey);
+
+    a {
+      color: var(--blue);
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+    }
   }
   
   .popular-plan .plan-footer {
@@ -272,14 +284,7 @@ main {
     border-bottom-left-radius: .75rem;
   }
   
-  button {
-    color: var(--blue);
-    font-weight: 600;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .popular-plan button {
+  .popular-plan a {
     color: white;
     display: flex;
     justify-content: center;
