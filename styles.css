@@ -9,6 +9,10 @@
   --dark-grey: #4d5562;
   --brown: #7c4f1e;
   --medium-grey: #4d556233;
+
+  --tablet-breakpoint: 768px;
+  --small-desktop-breakpoint: 1024px;
+  --regular-desktop-breakpoint: 1350px;
 }
 
 /* loading Vietnam Pro font */
@@ -197,7 +201,7 @@ main {
   }
 
   /* Hide team plan on mobile */
-  .team-plan {
+  .team-plan, .free-plan {
     display: none;
   }
   
@@ -447,5 +451,35 @@ main {
         }
       }
     }
+  }
+}
+@media (min-width: 1350px) {
+  main {
+    section#pricing-container {
+      .pricing-column {
+
+        &.free-plan {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1350px) {
+  .free-plan {
+    display: flex;
+    order: 2;
+  }
+
+  .team-plan {
+    order: 3;
+  }
+
+  .popular-plan {
+    order: 4;
+  }
+
+  .enterprise-plan {
+    order: 5;
   }
 }
