@@ -147,17 +147,23 @@ header {
   border-top-left-radius: 1rem;
 }
 
+.feature-item:nth-child(9){
+  border-bottom-left-radius: 1rem;
+}
+
 main {
   background-color: var(--white);
   width:  100%;
   justify-content: center;
   display: flex;
   padding-inline: 1.5em;
+  padding-block: 2rem 1.5rem;
 
   #pricing-container {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
+    justify-content: center;
   }
   
   /* Column styles */
@@ -166,13 +172,8 @@ main {
     flex-direction: column;
   }
   
-  /* Feature column */
-  .feature-column {
-    flex: 0.5;
-  }
-  
   .feature-item {
-    padding: 0.75rem;
+    padding-inline: 0.5rem;
     font-size: 0.875rem;
     color: var(--dark-blue);
     text-align: left;
@@ -274,6 +275,8 @@ main {
       font-weight: 600;
       background-color: transparent;
       cursor: pointer;
+      display: flex;
+      justify-content: space-between;
     }
   }
   
@@ -326,7 +329,7 @@ main {
       font-size: 0.875rem;
       color: var(--dark-blue);
       text-align: left;
-      display: block;
+      display: flex;
       align-items: center;
       min-height: 3rem;
       font-weight: 600;
@@ -357,16 +360,16 @@ main {
     }
     
     .plan-feature, .feature-item {
-      padding: 1.5rem;
       font-size: 1.25rem;
     }
     
     .plan-header {
       font-size: 1.25rem;
+      min-height: 128.4px;
     }
     
     .price {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     
     .plan-footer {
@@ -389,6 +392,15 @@ main {
     .enterprise-plan {
       order: 4;
     }
+
+    .feature-item {
+      width: 100%; /* Full width on larger screens */
+      max-width: 300px;
+    }
+
+    #pricing-container {
+      max-width: 1200px;
+    }
   }
 }
 
@@ -404,6 +416,36 @@ main {
 
     p {
       font-size: 1.25rem;
+      max-width: 34rem;
+    }
+  }
+
+  main {
+    padding-block: 3rem 1.5rem;
+
+    section#pricing-container {
+
+      .pricing-column {
+        
+        .plan-header,
+        .plan-feature,
+        .plan-footer {
+          min-width: 175px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    section#pricing-container {
+      .pricing-column {
+        .plan-header,
+        .plan-feature,
+        .plan-footer {
+          min-width: 250px;
+        }
+      }
     }
   }
 }
