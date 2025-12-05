@@ -281,6 +281,23 @@ main {
       cursor: pointer;
       display: flex;
       justify-content: space-between;
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 50%;
+      background-color: currentColor;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a:hover::after {
+      width: 100%;
+      left: 0;
     }
   }
   
@@ -482,4 +499,11 @@ main {
   .enterprise-plan {
     order: 5;
   }
+}
+
+/* Accessibility: Focus indicators */
+a:focus-visible {
+  outline: 3px solid var(--brown);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
